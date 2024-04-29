@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecommerce Product Listing</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Ecommerce Product Listing</h1>
+  </header>
+  <main>
+    <section id="categories">
+      <h2>Shop by Category</h2>
+      <ul>
+        <li><a href="#" onclick="showCategory('electronics')">Electronics</a></li>
+        <li><a href="#" onclick="showCategory('clothing')">Clothing</a></li>
+        <li><a href="#" onclick="showCategory('accessories')">Accessories</a></li>
+      </ul>
+    </section>
+    <section id="filters">
+      <h2>Price Range</h2>
+      <label for="minPrice">Min Price:</label>
+      <input type="number" id="minPrice" value="0" min="0" step="1">
+      <label for="maxPrice">Max Price:</label>
+      <input type="number" id="maxPrice" value="99999" min="0" step="1">
+      <button onclick="showCategory()">Apply Filter</button>
+    </section>
+    <section id="products">
+      <!-- Products will be displayed here -->
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
